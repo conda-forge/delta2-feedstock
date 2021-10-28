@@ -1,5 +1,5 @@
 {% set name = "delta" %}
-{% set version = "master" %}
+{% set version = "v2.0_gamma" %}
 
 package:
   name: {{ name|lower }}2
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://gitlab.com/dunloplab/{{ name }}/-/archive/{{ version }}/{{ name }}-{{ version }}.tar.gz
-  sha256: d2178275a35838f281d46d98ef051460f623a9394b0f219ee4a6eadbc160e423
+  sha256: 243c6cb060401e411178edf608ea580438afe72c0e970610fd834ec8bd6a272a
 
 build:
   number: 0
