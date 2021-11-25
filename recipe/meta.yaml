@@ -1,5 +1,5 @@
 {% set name = "delta" %}
-{% set version = "v2.0_gamma" %}
+{% set version = "2.0-gamma3" %}
 
 package:
   name: {{ name|lower }}2
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://gitlab.com/dunloplab/{{ name }}/-/archive/{{ version }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 243c6cb060401e411178edf608ea580438afe72c0e970610fd834ec8bd6a272a
+  sha256: b53e2713c533834aa1cd551af035782424df14e1f6e53ad17c6d125460d99022 
 
 build:
   number: 0
@@ -27,6 +27,7 @@ requirements:
     - opencv >=4.1
     - tensorflow >=2
     - ffmpeg-python
+    - requests
 
 test:
   imports:
