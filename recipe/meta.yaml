@@ -1,5 +1,5 @@
 {% set name = "delta" %}
-{% set version = "2.0-gamma3" %}
+{% set version = "2.0_gamma3" %}
 
 package:
   name: {{ name|lower }}2
@@ -51,4 +51,3 @@ extra:
   recipe-maintainers:
     - jblugagne
     - owen24819
-
