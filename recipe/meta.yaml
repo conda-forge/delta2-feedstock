@@ -7,8 +7,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://gitlab.com/dunloplab/{{ name }}/-/archive/{{ version }}/{{ name }}-{{ version }}.tar.gz
-  sha256: b53e2713c533834aa1cd551af035782424df14e1f6e53ad17c6d125460d99022 
+  url: https://gitlab.com/dunloplab/{{ name }}/-/archive/main/{{ name }}-main.tar.gz
+  sha256: fe9c4acf2457dd1f5526072c9882d0a74e11bdfd23c0947bebb7d689a2ea93ce 
 
 build:
   number: 0
@@ -52,3 +52,4 @@ extra:
   recipe-maintainers:
     - jblugagne
     - owen24819
+
