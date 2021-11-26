@@ -1,13 +1,13 @@
 {% set name = "delta" %}
-{% set version = "v2.0_gamma" %}
+{% set version = "2.0b3" %}
 
 package:
   name: {{ name|lower }}2
   version: {{ version }}
 
 source:
-  url: https://gitlab.com/dunloplab/{{ name }}/-/archive/{{ version }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 243c6cb060401e411178edf608ea580438afe72c0e970610fd834ec8bd6a272a
+  url: https://gitlab.com/dunloplab/{{ name }}/-/archive/main/{{ name }}-main.tar.gz
+  sha256: fe9c4acf2457dd1f5526072c9882d0a74e11bdfd23c0947bebb7d689a2ea93ce 
 
 build:
   number: 0
@@ -23,10 +23,11 @@ requirements:
   run:
     - python 
     - scikit-image >=0.18
-    - tifffile >=2021
+    - tifffile >=2020
     - opencv >=4.1
     - tensorflow >=2
     - ffmpeg-python
+    - requests
 
 test:
   imports:
@@ -48,4 +49,5 @@ about:
 
 extra:
   recipe-maintainers:
+    - jblugagne
     - owen24819
