@@ -24,11 +24,11 @@ requirements:
     - {{ cdt('libxxf86vm') }}  # [linux]
     - {{ cdt('libxext') }}     # [linux]
   host:
-    - python
+    - python >=3.6
     - pip
     - xorg-libxfixes  # [linux]
   run:
-    - python
+    - python >=3.6
     - numpy >=1.20 
     - scikit-image >=0.18
     - tifffile >=2020
