@@ -17,16 +17,9 @@ build:
 requirements:
   build:
     - {{ compiler('c') }}
-    - {{ cdt('mesa-libgl-devel') }}  # [linux]
-    - {{ cdt('mesa-dri-drivers') }}  # [linux]
-    - {{ cdt('libselinux') }}  # [linux]
-    - {{ cdt('libxdamage') }}  # [linux]
-    - {{ cdt('libxxf86vm') }}  # [linux]
-    - {{ cdt('libxext') }}     # [linux]
   host:
     - python >=3.6
     - pip
-    - xorg-libxfixes  # [linux]
   run:
     - python >=3.6
     - numpy >=1.20 
