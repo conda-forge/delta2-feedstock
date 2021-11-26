@@ -11,17 +11,25 @@ source:
 
 build:
   number: 0
-  skip: true  # [win]
+  noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   build:
     - {{ compiler('c') }}
+    - {{ cdt('mesa-libgl-devel') }}  # [linux]
+    - {{ cdt('mesa-dri-drivers') }}  # [linux]
+    - {{ cdt('libselinux') }}  # [linux]
+    - {{ cdt('libxdamage') }}  # [linux]
+    - {{ cdt('libxxf86vm') }}  # [linux]
+    - {{ cdt('libxext') }}     # [linux]
   host:
     - python
     - pip
-  run:
-    - python 
+    - xorg-libxfixes  # [linux]
+ run:
+    - python
+    - numpy >=1.20 
     - scikit-image >=0.18
     - tifffile >=2020
     - opencv >=4.1
