@@ -27,7 +27,7 @@ requirements:
     - python
     - pip
     - xorg-libxfixes  # [linux]
- run:
+  run:
     - python
     - numpy >=1.20 
     - scikit-image >=0.18
