@@ -1,5 +1,5 @@
 {% set name = "delta" %}
-{% set version = "2.0_gamma3" %}
+{% set version = "2.0b3" %}
 
 package:
   name: {{ name|lower }}2
@@ -23,7 +23,7 @@ requirements:
   run:
     - python 
     - scikit-image >=0.18
-    - tifffile >=2021
+    - tifffile >=2020
     - opencv >=4.1
     - tensorflow >=2
     - ffmpeg-python
