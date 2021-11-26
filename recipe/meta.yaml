@@ -6,8 +6,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://gitlab.com/dunloplab/{{ name }}/-/archive/main/{{ name }}-main.tar.gz
-  sha256: fe9c4acf2457dd1f5526072c9882d0a74e11bdfd23c0947bebb7d689a2ea93ce 
+  url: https://gitlab.com/dunloplab/{{ name }}/-/archive/dev/{{ name }}-dev.tar.gz
+  sha256: 6e9dd9f4b673ea6fe79e83de99493c693bd8d8256e74dd4b6d784bd68d60a3bc 
 
 build:
   number: 0
