@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://files.pythonhosted.org/packages/ce/db/c5470835f1e03d836876690b93d808926daf5113ab9000c9b06f5e44023c/delta2-2.0.2.tar.gz
+  url: https://files.pythonhosted.org/packages/5a/28/88930dbfd1d97aeed392fa1b8fa0bc5e4892ae4dd77c959c02f73325756c/delta2-2.0.3.tar.gz
   sha256: 696033749ae02fe6863b70083aa2d60f0a176fb2cbcf3474c9ced699f74dbc24
 
 build:
