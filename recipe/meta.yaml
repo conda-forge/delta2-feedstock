@@ -1,13 +1,13 @@
 {% set name = "delta" %}
-{% set version = "2.0.2" %}
+{% set version = "2.0.3" %}
 
 package:
   name: {{ name|lower }}2
   version: {{ version }}
 
 source:
-  url: https://gitlab.com/dunloplab/{{ name }}/-/archive/{{ version }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 215d9dc1ab885e698408c4dab8572878fe96a19314bd4c188993fab669151502 
+  url: https://files.pythonhosted.org/packages/ce/db/c5470835f1e03d836876690b93d808926daf5113ab9000c9b06f5e44023c/delta2-2.0.2.tar.gz
+  sha256: 696033749ae02fe6863b70083aa2d60f0a176fb2cbcf3474c9ced699f74dbc24
 
 build:
   number: 0
