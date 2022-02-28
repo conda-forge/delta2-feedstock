@@ -1,13 +1,13 @@
 {% set name = "delta" %}
-{% set version = "2.0.3" %}
+{% set version = "2.0.4" %}
 
 package:
   name: {{ name|lower }}2
   version: {{ version }}
 
 source:
-  url: https://files.pythonhosted.org/packages/5a/28/88930dbfd1d97aeed392fa1b8fa0bc5e4892ae4dd77c959c02f73325756c/delta2-2.0.3.tar.gz
-  sha256: 696033749ae02fe6863b70083aa2d60f0a176fb2cbcf3474c9ced699f74dbc24
+  url: https://files.pythonhosted.org/packages/70/f5/7cf2d5a7cbefa2978fa7f4e178579ba0fe91f434f37247dd8d8614c3139e/delta2-2.0.4.tar.gz
+  sha256: dc178c23b12c56b32e479d216de73623755a626a62b7eceed5ec79d0bfb85538 
 
 build:
   number: 1
