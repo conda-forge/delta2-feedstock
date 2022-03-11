@@ -1,13 +1,13 @@
 {% set name = "delta" %}
-{% set version = "2.0.4" %}
+{% set version = "2.0.5" %}
 
 package:
   name: {{ name|lower }}2
   version: {{ version }}
 
 source:
-  url: https://files.pythonhosted.org/packages/70/f5/7cf2d5a7cbefa2978fa7f4e178579ba0fe91f434f37247dd8d8614c3139e/delta2-2.0.4.tar.gz
-  sha256: dc178c23b12c56b32e479d216de73623755a626a62b7eceed5ec79d0bfb85538 
+  url: https://files.pythonhosted.org/packages/1c/79/4151bd97bb6e50cb47eb752ce2b28a08cfcab5ae5ad304148512f9e0de94/delta2-2.0.5.tar.gz
+  sha256: c99c8e14e54caf691b28138d039f1d46759156714c707820685efae7f41a4d2d
 
 build:
   number: 1
@@ -24,7 +24,6 @@ requirements:
     - python
     - numpy >=1.20 
     - scikit-image >=0.18
-    - tifffile >=2020
     - opencv >=4.1
     - tensorflow >=2
     - ffmpeg-python
@@ -52,3 +51,4 @@ extra:
   recipe-maintainers:
     - jblugagne
     - owen24819
+    - Armavica
